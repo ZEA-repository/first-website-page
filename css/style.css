@@ -1,0 +1,894 @@
+h1,
+.intro-heading > span,
+.service-content-heading > span {
+	font-family:'OpenSans ExtraBold', Helvetica, Arial, sans-serif;
+	font-weight: 800;
+}
+
+p {
+    font-family: 'OpenSans Regular', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+
+h2,
+.service-content-heading > span,
+.feature-heading > span,
+a {
+	font-family: 'OpenSans', , Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+h3 {
+
+}
+
+main {
+	overflow: hidden;
+	/* Это свойство скрывает переполнение. В этом макете это нужно, чтобы декоративная подложка в разделе контактов не выходила за край. Вообще-то это не самая лучшая практика, потому что она не решает проблему, а скрывает. В данном случае это ни на что не влияет, но в реальных проектах лучше найти решение проблемы. */
+}
+
+body {
+	margin: 0;
+}
+
+header {
+	background-color: rgb(246, 242, 242);
+}
+
+.site-menu {
+	display: flex;
+	max-width: 1249px;
+	margin: 0 auto;
+	min-height: 89px;
+	justify-content: center;
+	background-color: rgb(49, 48, 48);
+}
+
+.site-menu ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	right: 20px;
+}
+
+.site-menu ul li {
+	min-height: 89px;
+}
+
+.site-menu ul li a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 41.8px 30px 30.8px 29px;
+	/*letter-spacing: 1.5px;*/
+	/*выравнивание ссылок происходит за счет одновременного наличия 
+	{display: ...; align-items: ...; padding: ...;}*/
+
+	color: rgb(224, 224, 244);
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.site-menu ul li a:hover {
+	background-color: rgb(255, 63 , 64);
+}
+
+.intro-out-color {
+	background-color: rgb(246, 242, 242);
+}
+
+.intro-content {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	max-width: 1249px;
+	margin: 0 auto;
+	padding: 92px 0 0 0;
+	/*задается расстояние между header и intro-heading*/
+}
+
+.intro {
+	width: 42%; 
+}
+
+.intro-heading {
+	margin: 0;
+	font-size: 57px;
+	text-transform: uppercase;
+	line-height: 1.2em;
+	/* Чтобы высота строки оставалась пропорциональной разному размеру шрифта, можно указать ее в относительных единицах em. Они зависят от размера шрифта. */
+	letter-spacing: 6px; 
+	/*расстояние между буквами*/
+	
+	font-family:'OpenSans ExtraBold';
+	font-weight: 800;
+}
+
+.intro-text {
+	line-height: 1.8em;
+	width: 80%;
+}
+
+.intro-heading-first-string {
+	letter-spacing: 0.5px; 
+}
+
+.intro-heading-second-string {
+	letter-spacing: 2.5px; 
+}
+
+.intro-image {
+	width: 551px;
+	height: 356px;
+	box-shadow: 0 -10px 40px 0 rgb(124, 124, 124);
+}
+
+.intro-text {
+	margin: 18px 0 0 0;
+}
+
+.intro-contact-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 54px 0 120px 0;
+	/*задается расстояние между bottom, header и краем страницы*/
+
+	width: 227px;
+	height: 55px;
+	border-radius: 5px;
+	background-color: rgb(255, 45, 45);
+
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-size: 20px;
+	text-transform: capitalize;
+	font-family: 'OpenSans', , Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+.service-out-color {
+	background-color: rgb(255, 255, 255);
+}
+
+.service-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	max-width: 1249px;
+	margin: 0 auto;
+	padding: 105px 0 0 0;
+}
+
+.service-content {
+	width: 50%;
+}
+
+.service-content-heading {
+	margin: 0;
+	font-size: 42px;
+	text-transform: uppercase;
+	color: rgb(88, 88, 88);
+	line-height: 1.3em;
+	/* Чтобы высота строки оставалась пропорциональной разному размеру шрифта, можно указать ее в относительных единицах em. Они зависят от размера шрифта. */
+	letter-spacing: 6px;
+	/*расстояние между буквами*/
+}
+
+.service-heading {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	font-size: 25px;
+	text-transform: capitalize;
+	color: rgb(88, 88, 88);
+	
+
+	/*line-height: 1.2em;*/
+	/* Чтобы высота строки оставалась пропорциональной разному размеру шрифта, можно указать ее в относительных единицах em. Они зависят от размера шрифта. */
+	/*letter-spacing: 6px; */
+	/*расстояние между буквами*/
+	
+	/*font-family:'OpenSans ExtraBold';
+	font-weight: 800;*/
+}
+
+.service-text {
+	margin: 35px 0 0 0;
+	line-height: 1.8em;
+	width: 80%;
+}
+
+.service-heading-first-string {
+	letter-spacing: 1px; 
+}
+
+.service-heading-second-string {
+	letter-spacing: 0.5px; 
+}
+
+
+.service-connect-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 54px 0 123px 0;
+	/*задается расстояние между bottom, header и краем страницы*/
+
+	width: 222px;
+	height: 52px;
+	border: 2px solid rgb(255, 0, 0);
+	border-radius: 5px;
+	letter-spacing: 1.5px; 
+	color: rgb(255, 0, 0);
+	text-decoration: none;
+	font-size: 18px;
+	text-transform: capitalize;
+}
+
+.service-description {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 49%;
+	position: relative;
+	/*right: 33px;*/
+	top: 8px;
+}
+
+.service-mamagement,
+.service-design,
+.service-brading,
+.service-animation {
+	line-height: 1.8em;
+	width: 47%;
+}
+
+.service-icons-up {
+	margin: 0 0 18px 0;
+}
+
+.service-icons-down {
+	margin: 15px 0 23px 0;
+}
+
+.service-mamagement,
+.service-brading {
+	/*margin-left: 50px;*/
+}
+
+
+
+.feature-out-color {
+	background-color: rgb(255, 255, 255);
+}
+
+.feature-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/*flex-wrap: wrap;*/
+	max-width: 1249px;
+	margin: 0 auto;
+	padding: 107px 0 0 0;
+}
+
+.feature-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.feature-heading {
+	margin: 0;
+	font-size: 45px;
+	text-transform: uppercase;
+	color: rgb(88, 88, 88);
+
+	/*line-height: 1.2em;*/
+	/* Чтобы высота строки оставалась пропорциональной разному размеру шрифта, можно указать ее в относительных единицах em. Они зависят от размера шрифта. */
+	/*letter-spacing: 6px; */
+	/*расстояние между буквами*/
+	
+	/*font-family:'OpenSans ExtraBold';
+	font-weight: 800;*/
+}
+
+.feature-text {
+	margin: 36px 0 90px 0;
+	/*расстояние между nav и p*/
+
+	line-height: 1.8em;
+}
+
+/*.service-heading-first-string {
+	letter-spacing: 0; 
+}*/
+
+
+.feature-menu {
+	display: flex;
+	max-width: 1249px;
+	margin: 0 auto;
+	min-height: 89px;
+	justify-content: center;
+	margin-bottom: 36px;
+	
+}
+
+.feature-menu ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	right: 20px;
+	max-width: 900px;
+}
+
+.feature-menu ul li {
+	min-height: 89px;
+}
+
+.feature-menu ul li a {
+	display: flex;
+	align-items: center;
+	padding: 30px 29px 30px 29px;
+	/*letter-spacing: 1.5px;*/
+	/*выравнивание ссылок происходит за счет одновременного наличия 
+	{display: ...; align-items: ...; padding: ...;}*/
+
+	color: rgb(49, 48, 48);
+	opacity: 0.7;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.feature-menu ul li a:hover {
+	color: rgb(255, 45 , 45);
+}
+
+.feature-images-wrapper {
+	display: flex;
+	/*flex-direction: column;*/
+	justify-content: space-between;
+	flex-wrap: wrap;
+	max-width: 1249px;
+	margin: 0 auto;
+	padding: 0 0 140px 0;
+
+}
+
+.feature-images-up,
+.feature-images-down {
+	margin-bottom: 19px; 
+}
+
+.feature-images-margin-start,
+.feature-images-margin-end {
+	margin-left: 0;
+}
+
+.team-out-color {
+	background-color: rgb(255, 255, 255);
+}
+
+.team-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	max-width: 1249px;
+	margin: 0 auto;
+	padding: 140px 0 110px 0;
+}
+
+.team-content {
+	margin: 0 0 105px 0;
+	width: 50%;
+}
+
+.team-content-heading {
+	margin: 0 0 42px 0;
+	font-size: 45px;
+	text-transform: uppercase;
+	color: rgb(88, 88, 88);
+
+
+	/*line-height: 1.2em;*/
+	/* Чтобы высота строки оставалась пропорциональной разному размеру шрифта, можно указать ее в относительных единицах em. Они зависят от размера шрифта. */
+	/*letter-spacing: 6px; */
+	/*расстояние между буквами*/
+	
+	/*font-family:'OpenSans ExtraBold';
+	font-weight: 800;*/
+}
+
+.team-content-text {
+	margin: 35px 0 0 0;
+	line-height: 2.2em;
+}
+
+.team-resume-mark {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.team-photo-mark {
+	width: 322px;
+	height: 459px;
+}
+
+.team-resume-description {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 70%;
+}
+
+.team-resume-heading {
+	margin: 0;
+	font-size: 35px;
+	text-transform: uppercase;
+	color: rgb(88, 88, 88);
+
+	/*line-height: 1.2em;*/
+	/* Чтобы высота строки оставалась пропорциональной разному размеру шрифта, можно указать ее в относительных единицах em. Они зависят от размера шрифта. */
+	/*letter-spacing: 6px; */
+	/*расстояние между буквами*/
+	
+	/*font-family:'OpenSans ExtraBold';
+	font-weight: 800;*/
+}
+
+.team-resume-social-links {
+	display: flex;
+	justify-content: space-between;
+	max-width: 375px;
+}
+
+.team-resume-social-links a {
+	text-decoration: none;
+	font-size: 18px;
+	color: rgb(88, 88, 88);
+	opacity: 0.8;
+	text-transform: capitalize;
+	margin-top: 48px 0 67px 0;
+}
+
+.team-resume-images {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 855px;
+}
+
+.team-resume-image {
+	width: 24%;
+}
+
+
+
+.subscribe-out-color {
+	background-color: rgb(149, 148, 148);
+}
+
+.subscribe-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1249px;
+	margin: 0 auto;
+	padding: 105px 0 0 0;
+	align-items: center;
+	justify-content: center;
+}
+
+.subscribe-content {
+	margin: 0 0 140px 0;
+	/*width: 100%;*/
+}
+
+.subscribe-content-heading {
+	margin: 0;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	color: rgb(88, 88, 88);
+
+	/*line-height: 1.2em;*/
+	/* Чтобы высота строки оставалась пропорциональной разному размеру шрифта, можно указать ее в относительных единицах em. Они зависят от размера шрифта. */
+	/*letter-spacing: 6px; */
+	/*расстояние между буквами*/
+	
+	/*font-family:'OpenSans ExtraBold';
+	font-weight: 800;*/
+}
+
+.subscribe-content-text {
+	margin: 42px 0 66px 0;
+	line-height: 1.8em;
+	text-align: center;
+}
+
+.subscribe-field {
+	width: 100%;
+	max-width: 758px;
+	margin: 0;
+}
+
+.subscribe-form {
+	display: flex;
+	justify-content: space-between;
+}
+
+input.subscribe-email {
+	width: 522px;
+	height: 80px;
+}
+
+.subscribe-field-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	/*задается расстояние между bottom, header и краем страницы*/
+
+	width: 213px;
+	height: 80px;
+	border-radius: 5px;
+	background-color: rgb(255, 45, 45);
+
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+
+
+.feedback-out-color {
+	background-color: rgb(255, 255, 255);
+}
+
+.feedback-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0 0 0 165px;
+	margin: 105px 0 110px 0;
+}
+
+.feedback-content {
+	margin: 0 0 105px 0;
+	width: 60%;
+}
+
+.feedback-content-heading {
+	margin: 0;
+	font-size: 45px;
+	text-transform: uppercase;
+	color: rgb(88, 88, 88);
+
+	/*line-height: 1.2em;*/
+	/* Чтобы высота строки оставалась пропорциональной разному размеру шрифта, можно указать ее в относительных единицах em. Они зависят от размера шрифта. */
+	/*letter-spacing: 6px; */
+	/*расстояние между буквами*/
+	
+	/*font-family:'OpenSans ExtraBold';
+	font-weight: 800;*/
+}
+
+.feedback-content-text {
+	margin: 35px 0 0 0;
+	line-height: 1.8em;
+	width: 100%;
+	max-width: 732px;
+}
+
+.feedback-form-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.feedback-form-out {
+	width: 50%;
+}
+
+.feedback-form {
+	display: flex;
+	flex-direction: column;
+	max-width: 732px;
+}
+
+.feedback-for-flex-alignment {
+	display: flex;
+	justify-content: space-between;
+}
+
+input {
+	border: none;
+	border-radius: 10px;
+}
+
+input.feedback-name, 
+input.feedback-email,
+input.feedback-message {
+	background-color: rgb(229, 229, 229);
+}
+
+input.feedback-name, 
+input.feedback-email {
+	width: 340px;
+	height: 69px;
+}
+	
+
+input.feedback-message {
+	height: 250px;
+}
+
+input.feedback-message,
+input.feedback-link {
+	margin: 45px 0 0 0;
+}
+
+input.feedback-link {
+	height: 72px;
+	background-color: rgb(255, 59, 59);
+	font-size: 18px;
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+}
+
+.feedback-contacts {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 79px;
+	width: 40%;
+	background-color: rgb(45, 45, 45);
+}
+
+.feedback-contacts-heading {
+	font-size: 25px;
+	color: rgb(205, 205, 205);
+	text-transform: uppercase;
+	width: 50%;
+	margin: 0 0 41px 0;
+}
+
+
+.feedback-contacts-address {
+	font-size: 35px;
+}
+
+.feedback-contacts-address p {
+	margin: 0;
+	line-height: 1.8em;
+	font-size: 18px;
+	color: rgb(205, 205, 205);
+	width: 50%;
+
+	/*line-height: 1.2em;*/
+	/* Чтобы высота строки оставалась пропорциональной разному размеру шрифта, можно указать ее в относительных единицах em. Они зависят от размера шрифта. */
+	/*letter-spacing: 6px; */
+	/*расстояние между буквами*/
+	
+	/*font-family:'OpenSans ExtraBold';
+	font-weight: 800;*/
+}
+
+
+
+footer {
+	display: flex;
+	background-color: rgb(49, 48, 48);
+	justify-content: space-between;
+	padding: 0 165px 20px 165px;
+	align-items: flex-end;
+	min-height: 111px;
+}
+
+.footer-rules {
+	font-size: 12px;
+	opacity: 0.7;
+	color: rgb(255, 255, 255);
+}
+
+.footer-social-links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;	
+	width: 186px;
+}
+
+.footer-social-links a {
+	text-decoration: none;
+	padding: 0;
+	color: rgb(255, 255, 255);
+}
+
+.footer-icons {
+	text-decoration: none;
+	padding: 0;
+	color: rgb(255, 255, 255);
+}
+
+
+
+@media only screen and (max-width: 1330px) {
+	.intro-out-color,
+	.service-out-color,
+	.feature-out-color,
+	.team-out-color,
+	.subscribe-out-color,
+	.feedback-out-color	{
+		padding-left: 3vw;
+	}
+	
+	.service-wrapper {
+		flex-direction: column;
+	}
+	
+	.feature-images-wrapper {
+		max-width: 930px;
+	}	
+}
+
+
+@media only screen and (max-width: 1110px) {
+	.intro-content {
+		flex-direction: column;
+	}
+	
+	.intro-text {
+		width: 100%;
+	}
+
+	.service-wrapper {
+		flex-direction: column;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.intro-image {
+		justify-content: flex-start;
+	}
+
+	.intro-heading > span {
+		font-size: 50px;
+		line-height: 59px;
+	}
+
+	.feature-images-wrapper {
+		max-width: 615px;
+	}
+
+}
+
+@media only screen and (max-width: 675px) {
+	.feature-images-wrapper {
+		width: 350px;
+		justify-content: center;
+		margin: 0;
+		position: relative;
+		right: 8px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.intro-image-link {
+		justify-content: flex-start;
+	}
+
+	.intro-heading > span {
+		font-size: 45px;
+		line-height: 54px;
+	}
+
+	.intro-text p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.intro-image {
+		max-width: 450px;
+		max-height: 260px;
+		justify-content: center;
+	}
+
+	.intro-contact-link {
+		padding: 0 50px 0 60px;
+		font-size: 16px;
+	}
+	
+}
+
+@media only screen and (max-width: 530px) {
+	.site-menu ul {
+		flex-direction: column;
+	}
+
+	.site-menu ul li {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.site-menu ul li a {
+		padding: 20.9px 15px 15.4px 14.5px;
+	}
+
+	.intro-image-link {
+		justify-content: flex-start;
+	}
+
+	.intro-heading > span {
+		font-size: 35px;
+		line-height: 40px;
+	}
+
+	.intro-text p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.intro-image {
+		max-width: 450px;
+		max-height: 260px;
+		justify-content: center;
+	}
+
+	.intro-contact-link {
+		padding: 0 40px 0 50px;
+		font-size: 15px;
+	}
+
+
+}
+
+@media only screen and (max-width: 450px) {
+	.intro-image {
+		justify-content: flex-start;
+	}
+
+	.intro-heading > span {
+		font-size: 23px;
+		line-height: 28px;
+	}
+
+	.intro-image {
+		max-width: 350px;
+		max-height: 160px;
+		justify-content: center;
+	}
+
+	.intro-text p {
+		font-size: 13px;
+		line-height: 20px;
+	}
+
+	.intro-contact-link {
+		padding: 0 30px 0 40px;
+		font-size: 14px;
+	}
+}
+
+
