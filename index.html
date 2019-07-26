@@ -5,177 +5,198 @@
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap&subset=cyrillic" rel="stylesheet">
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/script.js" type="text/javascript" ></script>
 </head>
 <body>
 	<header> 
-		<nav class="site-menu">
-			<ul>
-				<li><a href="#">home</a></li>
-				<li><a href="#">portfolio</a></li>
-				<li><a href="#">about us</a></li>
-				<li><a href="#">contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	
-	<section class="intro-out-color">
-		<div class="intro-content">
-			<div class="intro">
-				<h1 class="intro-heading">
-					<span class="intro-heading-first-string">our strong</span> <br> <span class="intro-heading-second-string">organaisation</span></h1>
-				<p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit eligendi, sequi magnam explicabo porro rem fugiat soluta non, maiores, sed ut id? Iste, nihil recusandae eos dolore!</p>
-				<a href="#" class="intro-contact-link">contact us</a>
-			</div>
-			<a href="#" class=""><img src="images/intro.jpg" alt="фото команды" class="intro-image"></a>
-		</div>
-	</section>
-
-	<section class="service-out-color">
-		<div class="service-wrapper">
-			<div class="service-content">
-				<h1 class="service-content-heading"><span class="service-heading-first-string"> do you know we can </span> <br> <span class="service-heading-second-string">provide for you ?</span></h1>
-				<p class="service-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam unde, repellat voluptates! Reprehenderit commodi perferendis illum eaque tempore perspiciatis, aliquid eos quisquam fugit, odit quibusdam. Quisquam, vero.</p>
-				<a href="#" class="service-connect-link">learn more</a>
-			</div>
-			<div class="service-description">
-				<div class="service-mamagement"> 
-					<img src="icons/settengs.png" alt="logo" class="service-icons-up"> 
-					<h3 class="service-heading"> mamagement </h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aperiam ipsa beatae quas ratione ullam at voluptates.</p>
-					</div>
-				<div class="service-design">
-					<img src="icons/design.png" alt="logo" class="service-icons-up"> 
-					<h3 class="service-heading"> UI /UX Design </h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aperiam ipsa beatae quas ratione ullam at voluptates.</p>
-					</div>
-				<div class="service-brading">
-					<img src="icons/branding.png" alt="logo" class="service-icons-down"> 
-					<h3 class="service-heading"> logo /branding</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aperiam ipsa beatae quas ratione ullam at voluptates.</p>
-					</div>
-				<div class="service-animation">
-					<img src="icons/animation.png" alt="logo" class="service-icons-down"> 
-					<h3 class="service-heading"> animation </h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aperiam ipsa beatae quas ratione ullam at voluptates.</p>
-					</div>
-			</div>
-		</div>
-	</section>
-	<hr>
-	<section class="feature-out-color">
-		<div class="feature-wrapper">
-			<div class="feature-content">
-				<h2 class="feature-heading"><span class="service-heading-first-string">feature products</span></h2>
-				<p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam unde, repellat voluptates!</p>
-			</div>
-
-			<nav class="feature-menu">
+		<div class="site-menu-out">
+			<nav class="site-menu">
 				<ul>
-					<li><a href="#">all</a></li>
-					<li><a href="#">print template</a></li>
-					<li><a href="#">web template</a></li>
-					<li><a href="#">user interface</a></li>
-					<li><a href="#">mock-up</a></li>
+					<li><a href="#">home</a></li>
+					<li><a href="#">portfolio</a></li>
+					<li><a href="#">about us</a></li>
+					<li><a href="#">contact</a></li>
 				</ul>
 			</nav>
-			<div class="feature-images-wrapper">
-				<img src="images/feature.png" alt="logo" class="feature-images feature-images-up feature-images-margin-start">
-				<img src="images/feature.png" alt="logo" class="feature-images feature-images-up">
-				<img src="images/feature.png" alt="logo" class="feature-images feature-images-up">
-				<img src="images/feature.png" alt="logo" class="feature-images feature-images-up feature-images-margin-end">
-					
-				<img src="images/feature.png" alt="logo" class="feature-images-down feature-images-margin-start">
-				<img src="images/feature.png" alt="logo" class="feature-images-down">
-				<img src="images/feature.png" alt="logo" class="feature-images-down">
-				<img src="images/feature.png" alt="logo" class="feature-images-down feature-images-margin-end">
-			</div>		
 		</div>
-	</section>
+		<div class="site-menu-out-small">
+            <a href="#" class="menu-btn-small"> 
+            	<span></span>
+            	</a>
+	        <nav class="site-menu-small">
+		        <ul class="translate-decoration-line">
+					<li class="pointer-home"><a href="#"><span class="line-decoration-home"></span>home<span class="line-decoration-home"></span></a></li>
 
-	<section class="team-out-color">
-		<div class="team-wrapper">
-			<div class="team-content">
-				<h2 class="team-content-heading"><span class="team-heading-first-string">meet our team</span></h2>
-				<p class="team-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam unde, repellat voluptates!</p>
+					<li class="pointer-portfolio"><a href="#"><span class="line-decoration-portfolio"></span>portfolio<span class="line-decoration-portfolio"></span></a></li>
+
+					<li class="pointer-about-us"><a href="#"><span class="line-decoration-about-us"></span>about us<span class="line-decoration-about-us"></span></a></li>
+
+					<li class="pointer-contacts"><a href="#"><span class="line-decoration-contacts"></span>contact<span class="line-decoration-contacts"></span></a></li>
+				</ul>
+	        </nav>
+        </div>
+	</header>
+	
+		<section class="intro-out-color">
+			<div class="intro-content">
+				<div class="intro">
+					<h1 class="intro-heading">
+						<span class="intro-heading-first-string">our strong</span> <br> <span class="intro-heading-second-string">organaisation</span></h1>
+					<p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit eligendi, sequi magnam explicabo porro rem fugiat soluta non, maiores, sed ut id? Iste, nihil recusandae eos dolore!</p>
+					<a href="#" class="intro-contact-link">contact us</a>
+				</div>
+				<a href="#" class=""><img src="images/intro.jpg" alt="фото команды" class="intro-image"></a>
 			</div>
-			<div class="team-resume-mark">
-				<img src="images/feature.png" alt="logo" class="team-photo-mark">
-				<div class="team-resume-description">
-					<h3 class="team-resume-heading">mark waugh</h3>
-					<p class="team-resume-text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.</p>
-					<div class="team-resume-social-links">
-						<a href="#">facebook</a>
-						<a href="#">dribble</a>
-						<a href="#">behance</a>
-						<a href="#">twiter</a>
+		</section>
+
+		<section class="service-out-color">
+			<div class="service-wrapper">
+				<div class="service-content">
+					<h1 class="service-content-heading"><span class="service-heading-first-string"> do you know we can </span> <br> <span class="service-heading-second-string">provide for you ?</span></h1>
+					<p class="service-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam unde, repellat voluptates! Reprehenderit commodi perferendis illum eaque tempore perspiciatis, aliquid eos quisquam fugit, odit quibusdam. Quisquam, vero.</p>
+					<a href="#" class="service-connect-link">learn more</a>
+				</div>
+				<div class="service-description">
+					<div class="service-mamagement"> 
+						<img src="icons/settengs.png" alt="logo" class="service-icons-up"> 
+						<h3 class="service-heading"> mamagement </h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aperiam ipsa beatae quas ratione ullam at voluptates.</p>
 						</div>
-					<div class="team-resume-images">
-						<img src="images/feature.png" alt="logo" class="team-resume-image">
-						<img src="images/feature.png" alt="logo" class="team-resume-image">
-						<img src="images/feature.png" alt="logo" class="team-resume-image">
-						<img src="images/feature.png" alt="logo" class="team-resume-image">
+					<div class="service-design">
+						<img src="icons/design.png" alt="logo" class="service-icons-up"> 
+						<h3 class="service-heading"> UI /UX Design </h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aperiam ipsa beatae quas ratione ullam at voluptates.</p>
 						</div>
+					<div class="service-brading">
+						<img src="icons/branding.png" alt="logo" class="service-icons-down"> 
+						<h3 class="service-heading"> logo /branding</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aperiam ipsa beatae quas ratione ullam at voluptates.</p>
+						</div>
+					<div class="service-animation">
+						<img src="icons/animation.png" alt="logo" class="service-icons-down"> 
+						<h3 class="service-heading"> animation </h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aperiam ipsa beatae quas ratione ullam at voluptates.</p>
+						</div>
+				</div>
+			</div>
+		</section>
+		<hr>
+		<section class="feature-out-color">
+			<div class="feature-wrapper">
+				<div class="feature-content">
+					<h2 class="feature-heading"><span class="service-heading-first-string">feature products</span></h2>
+					<p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam unde, repellat voluptates!</p>
+				</div>
+
+				<nav class="feature-menu">
+					<ul>
+						<li><a href="#">all</a></li>
+						<li><a href="#">print template</a></li>
+						<li><a href="#">web template</a></li>
+						<li><a href="#">user interface</a></li>
+						<li><a href="#">mock-up</a></li>
+					</ul>
+				</nav>
+				<div class="feature-images-wrapper">
+					<img src="images/feature.png" alt="logo" class="feature-images feature-images-up feature-images-margin-start">
+					<img src="images/feature.png" alt="logo" class="feature-images feature-images-up">
+					<img src="images/feature.png" alt="logo" class="feature-images feature-images-up">
+					<img src="images/feature.png" alt="logo" class="feature-images feature-images-up feature-images-margin-end">
+						
+					<img src="images/feature.png" alt="logo" class="feature-images-down feature-images-margin-start">
+					<img src="images/feature.png" alt="logo" class="feature-images-down">
+					<img src="images/feature.png" alt="logo" class="feature-images-down">
+					<img src="images/feature.png" alt="logo" class="feature-images-down feature-images-margin-end">
 				</div>		
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<section class="subscribe-out-color">
-		<div class="subscribe-wrapper">
-			<div class="subscribe-content">
-				<h2 class="subscribe-content-heading"><span class="team-heading-first-string">Design tips, tricks, and freebies. Delivered weekly.</span></h2>
-				<p class="subscribe-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam unde, repellat voluptates!</p>
-				<div class="subscribe-field">
-					<form action="post" name="" class="subscribe-form">
-						<input type="email" name="" placeholder="Email..." required class="subscribe-email"> 
-						<input type="submit" value="subscribe" name="" class="subscribe-field-link">
-						</form>
-					</div>
-			</div>	
-		</div>
-	</section>
-
-	<section class="feedback-out-color">
-		<div class="feedback-wrapper">
-			<div class="feedback-content">
-				<h2 class="feedback-content-heading"><span class="team-heading-first-string">get in touch</span></h2>
-				<p class="feedback-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam unde, repellat voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam unde, repellat voluptates!</p>
+		<section class="team-out-color">
+			<div class="team-wrapper">
+				<div class="team-content">
+					<h2 class="team-content-heading"><span class="team-heading-first-string">meet our team</span></h2>
+					<p class="team-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam unde, repellat voluptates!</p>
 				</div>
-			<div class="feedback-form-wrapper">	
-				<div class="feedback-form-out">
-					<form action="get" name="" class="feedback-form">
-						<div class="feedback-for-flex-alignment">
-							<input type="text" name="" placeholder="Name" required class="feedback-name"> 
-							<input type="email" name="" placeholder="Email..." required class="feedback-email"> 
+				<div class="team-resume-mark">
+					<img src="images/feature.png" alt="logo" class="team-photo-mark">
+					<div class="team-resume-description">
+						<h3 class="team-resume-heading">mark waugh</h3>
+						<p class="team-resume-text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.</p>
+						<div class="team-resume-social-links">
+							<a href="#">facebook</a>
+							<a href="#">dribble</a>
+							<a href="#">behance</a>
+							<a href="#">twiter</a>
 							</div>
-						<input type="text" name="" placeholder="Type your message" required class="feedback-message"> 
-						<input type="submit" value="send message" name="" class="feedback-link">
-						</form>
-					</div>
-				<div class="feedback-contacts">
-					<h2 class="feedback-contacts-heading">contact info</h2>
-					<address class="feedback-contacts-address">
-						<p>Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh</p>
-						<p>redwan@deviserweb.com<br></p>
-						<p>(+88) 017 617 46373<br></p>
-					</address>
-					</div>
+						<div class="team-resume-images">
+							<img src="images/feature.png" alt="logo" class="team-resume-image">
+							<img src="images/feature.png" alt="logo" class="team-resume-image">
+							<img src="images/feature.png" alt="logo" class="team-resume-image">
+							<img src="images/feature.png" alt="logo" class="team-resume-image">
+							</div>
+					</div>		
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<footer>
-		<span class="footer-rules">&copy; Copyright&#64;Junaed 2016, All rights reserved.</span>
-		<div class="footer-social-links">
-			<a href="http://twitter.com">
-				<img src="icons/twitter.png" width="33" height="33" alt="..." class="footer-icons"> </a> 
-			<a href="http://">
-				<img src="icons/linkedin.png" width="33" height="33" alt="..." class="footer-icons"> </a> 
-			<a href="http://">
-				<img src="icons/google-plus.png" width="33" height="33" alt="..." class="footer-icons"> </a> 
-			<a href="http://facebook.com">
-				<img src="icons/facebook.png" width="33" height="33" alt="..." class="footer-icons"> </a>
+		<section class="subscribe-out-color">
+			<div class="subscribe-wrapper">
+				<div class="subscribe-content">
+					<h2 class="subscribe-content-heading"><span class="team-heading-first-string">Design tips, tricks, and freebies. Delivered weekly.</span></h2>
+					<p class="subscribe-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam unde, repellat voluptates!</p>
+					<div class="subscribe-field">
+						<form action="post" name="" class="subscribe-form">
+							<input type="email" name="" placeholder="Email..." required class="subscribe-email"> 
+							<input type="submit" value="subscribe" name="" class="subscribe-field-link">
+							</form>
+						</div>
+				</div>	
 			</div>
-	</footer>
+		</section>
+
+		<section class="feedback-out-color">
+			<div class="feedback-wrapper">
+				<div class="feedback-content">
+					<h2 class="feedback-content-heading"><span class="team-heading-first-string">get in touch</span></h2>
+					<p class="feedback-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam unde, repellat voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam unde, repellat voluptates!</p>
+					</div>
+				<div class="feedback-form-wrapper">	
+					<div class="feedback-form-out">
+						<form action="get" name="" class="feedback-form">
+							<div class="feedback-for-flex-alignment">
+								<input type="text" name="" placeholder="Name" required class="feedback-name"> 
+								<input type="email" name="" placeholder="Email..." required class="feedback-email"> 
+								</div>
+							<input type="text" name="" placeholder="Type your message" required class="feedback-message"> 
+							<input type="submit" value="send message" name="" class="feedback-link">
+							</form>
+						</div>
+					<div class="feedback-contacts">
+						<h2 class="feedback-contacts-heading">contact info</h2>
+						<address class="feedback-contacts-address">
+							<p>Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh</p>
+							<p>redwan@deviserweb.com<br></p>
+							<p>(+88) 017 617 46373<br></p>
+						</address>
+						</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<span class="footer-rules">&copy; Copyright&#64;Junaed 2016, All rights reserved.</span>
+			<div class="footer-social-links">
+				<a href="http://twitter.com">
+					<img src="icons/twitter.png" width="33" height="33" alt="..." class="footer-icons"> </a> 
+				<a href="http://">
+					<img src="icons/linkedin.png" width="33" height="33" alt="..." class="footer-icons"> </a> 
+				<a href="http://">
+					<img src="icons/google-plus.png" width="33" height="33" alt="..." class="footer-icons"> </a> 
+				<a href="http://facebook.com">
+					<img src="icons/facebook.png" width="33" height="33" alt="..." class="footer-icons"> </a>
+				</div>
+		</footer>
+	</div>
 </body>
 </html>
