@@ -22,6 +22,10 @@ h3 {
 
 }
 
+hr {
+	width: 94%;
+}
+
 main {
 	overflow: hidden;
 	/* Это свойство скрывает переполнение. В этом макете это нужно, чтобы декоративная подложка в разделе контактов не выходила за край. Вообще-то это не самая лучшая практика, потому что она не решает проблему, а скрывает. В данном случае это ни на что не влияет, но в реальных проектах лучше найти решение проблемы. */
@@ -31,7 +35,7 @@ body {
 	margin: 0;
 }
 
-header {
+.site-menu-out {
 	background-color: rgb(246, 242, 242);
 }
 
@@ -78,6 +82,11 @@ header {
 	background-color: rgb(255, 63 , 64);
 }
 
+/*hidden menu-small*/
+.site-menu-out-small {
+	display: none;
+}
+
 .intro-out-color {
 	background-color: rgb(246, 242, 242);
 }
@@ -89,7 +98,7 @@ header {
 	max-width: 1249px;
 	margin: 0 auto;
 	padding: 92px 0 0 0;
-	/*задается расстояние между header и intro-heading*/
+	/*задается расстояние между site-menu-out и intro-heading*/
 }
 
 .intro {
@@ -137,7 +146,7 @@ header {
 	align-items: center;
 	justify-content: center;
 	margin: 54px 0 120px 0;
-	/*задается расстояние между bottom, header и краем страницы*/
+	/*задается расстояние между bottom, site-menu-out и краем страницы*/
 
 	width: 227px;
 	height: 55px;
@@ -187,15 +196,6 @@ header {
 	font-size: 25px;
 	text-transform: capitalize;
 	color: rgb(88, 88, 88);
-	
-
-	/*line-height: 1.2em;*/
-	/* Чтобы высота строки оставалась пропорциональной разному размеру шрифта, можно указать ее в относительных единицах em. Они зависят от размера шрифта. */
-	/*letter-spacing: 6px; */
-	/*расстояние между буквами*/
-	
-	/*font-family:'OpenSans ExtraBold';
-	font-weight: 800;*/
 }
 
 .service-text {
@@ -218,11 +218,14 @@ header {
 	align-items: center;
 	justify-content: center;
 	margin: 54px 0 123px 0;
-	/*задается расстояние между bottom, header и краем страницы*/
+	/*задается расстояние между bottom, site-menu-out и краем страницы*/
 
 	width: 222px;
 	height: 52px;
-	border: 2px solid rgb(255, 0, 0);
+	border-left: 1px solid rgb(255, 0, 0);
+	border-right: 1px solid rgb(255, 0, 0);
+	border-top: 2px solid rgb(255, 0, 0);
+	border-bottom: 2px solid rgb(255, 0, 0);
 	border-radius: 5px;
 	letter-spacing: 1.5px; 
 	color: rgb(255, 0, 0);
@@ -292,14 +295,6 @@ header {
 	font-size: 45px;
 	text-transform: uppercase;
 	color: rgb(88, 88, 88);
-
-	/*line-height: 1.2em;*/
-	/* Чтобы высота строки оставалась пропорциональной разному размеру шрифта, можно указать ее в относительных единицах em. Они зависят от размера шрифта. */
-	/*letter-spacing: 6px; */
-	/*расстояние между буквами*/
-	
-	/*font-family:'OpenSans ExtraBold';
-	font-weight: 800;*/
 }
 
 .feature-text {
@@ -308,11 +303,6 @@ header {
 
 	line-height: 1.8em;
 }
-
-/*.service-heading-first-string {
-	letter-spacing: 0; 
-}*/
-
 
 .feature-menu {
 	display: flex;
@@ -403,15 +393,6 @@ header {
 	font-size: 45px;
 	text-transform: uppercase;
 	color: rgb(88, 88, 88);
-
-
-	/*line-height: 1.2em;*/
-	/* Чтобы высота строки оставалась пропорциональной разному размеру шрифта, можно указать ее в относительных единицах em. Они зависят от размера шрифта. */
-	/*letter-spacing: 6px; */
-	/*расстояние между буквами*/
-	
-	/*font-family:'OpenSans ExtraBold';
-	font-weight: 800;*/
 }
 
 .team-content-text {
@@ -444,14 +425,6 @@ header {
 	font-size: 35px;
 	text-transform: uppercase;
 	color: rgb(88, 88, 88);
-
-	/*line-height: 1.2em;*/
-	/* Чтобы высота строки оставалась пропорциональной разному размеру шрифта, можно указать ее в относительных единицах em. Они зависят от размера шрифта. */
-	/*letter-spacing: 6px; */
-	/*расстояние между буквами*/
-	
-	/*font-family:'OpenSans ExtraBold';
-	font-weight: 800;*/
 }
 
 .team-resume-social-links {
@@ -507,14 +480,6 @@ header {
 	text-transform: uppercase;
 	text-align: center;
 	color: rgb(88, 88, 88);
-
-	/*line-height: 1.2em;*/
-	/* Чтобы высота строки оставалась пропорциональной разному размеру шрифта, можно указать ее в относительных единицах em. Они зависят от размера шрифта. */
-	/*letter-spacing: 6px; */
-	/*расстояние между буквами*/
-	
-	/*font-family:'OpenSans ExtraBold';
-	font-weight: 800;*/
 }
 
 .subscribe-content-text {
@@ -544,7 +509,7 @@ input.subscribe-email {
 	align-items: center;
 	justify-content: center;
 	margin: 0;
-	/*задается расстояние между bottom, header и краем страницы*/
+	/*задается расстояние между bottom, site-menu-out и краем страницы*/
 
 	width: 213px;
 	height: 80px;
@@ -581,14 +546,6 @@ input.subscribe-email {
 	font-size: 45px;
 	text-transform: uppercase;
 	color: rgb(88, 88, 88);
-
-	/*line-height: 1.2em;*/
-	/* Чтобы высота строки оставалась пропорциональной разному размеру шрифта, можно указать ее в относительных единицах em. Они зависят от размера шрифта. */
-	/*letter-spacing: 6px; */
-	/*расстояние между буквами*/
-	
-	/*font-family:'OpenSans ExtraBold';
-	font-weight: 800;*/
 }
 
 .feedback-content-text {
@@ -655,6 +612,29 @@ input.feedback-link {
 	color: rgb(255, 255, 255);
 }
 
+.feedback-name-active {
+	position: relative;
+	left: 20px;
+}
+
+::-webkit-input-placeholder {
+	position: relative;
+	left: 20px;
+}
+
+/*::-webkit-input-placeholder {
+	position: relative;
+	left: 20px;
+}
+
+:-moz-place-holder {
+	text-align: center;
+};
+
+::-moz-place-holder {
+	text-align: center;
+};*/
+
 .feedback-contacts {
 	display: flex;
 	flex-direction: column;
@@ -680,17 +660,11 @@ input.feedback-link {
 .feedback-contacts-address p {
 	margin: 0;
 	line-height: 1.8em;
+	/* Чтобы высота строки оставалась пропорциональной разному размеру шрифта, можно указать ее в относительных единицах em. Они зависят от размера шрифта. */
+
 	font-size: 18px;
 	color: rgb(205, 205, 205);
 	width: 50%;
-
-	/*line-height: 1.2em;*/
-	/* Чтобы высота строки оставалась пропорциональной разному размеру шрифта, можно указать ее в относительных единицах em. Они зависят от размера шрифта. */
-	/*letter-spacing: 6px; */
-	/*расстояние между буквами*/
-	
-	/*font-family:'OpenSans ExtraBold';
-	font-weight: 800;*/
 }
 
 
@@ -733,7 +707,7 @@ footer {
 
 
 
-@media only screen and (max-width: 1330px) {
+@media only screen and (max-width: 1336px) {
 	.intro-out-color,
 	.service-out-color,
 	.feature-out-color,
@@ -742,11 +716,158 @@ footer {
 	.feedback-out-color	{
 		padding-left: 3vw;
 	}
-	
-	.service-wrapper {
-		flex-direction: column;
+
+	/*establish new menu*/
+	.site-menu {
+		display: none;
+	} 
+
+	.content-out {
+		transition: 0.5s;
+		position: relative;
+		z-index: 0;
 	}
-	
+
+	.content-out-active {
+		transform: translateX(30%);
+	}
+
+	.site-menu-out-small {
+		position: fixed;
+		left: 0;top: 0;
+		z-index: 99;
+		width: 30%;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+		transition: 0.5s;
+		transform: translateX(-100%);
+		background-color: rgba(48, 48, 49, 0.97); 
+	}
+
+	.site-menu-out-small-active {
+	    transform: translateX(0%);
+	}
+
+	.site-menu-small {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50%;
+		flex-direction: column;
+		flex-basis: 100%;
+		background-color: rgb(43, 43, 44);
+	}
+
+	.site-menu-small ul {
+		list-style: none;
+		padding: 0;
+		width: 100%;
+	}
+
+	.site-menu-small ul li {
+		display: flex;
+		align-items: center;
+		min-height: 89px;
+		justify-content: center;
+		border-radius: 5px;
+	}
+
+	.site-menu-small ul li:hover {
+		background-color: rgb(91, 34, 34);	
+	}
+
+	.site-menu-small a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 18px;
+		color: rgb(205, 205, 205);
+		flex-basis: 100%;
+		height: 89px;
+		border-radius: 5px;
+	}
+
+	.line-decoration-home-active,
+	.line-decoration-portfolio-active,
+	.line-decoration-about-us-active,
+	.line-decoration-contacts-active {
+		position: relative;
+		width: 90px;
+		height: 3px;
+		background-color: rgba(205, 205, 205, 0.85);;
+	}
+
+	.translate-decoration-line > li:nth-of-type(odd) {
+		transform: translateY(-5px);
+	}
+
+	.translate-decoration-line > li:nth-of-type(even) {
+		transform: translateY(5px);
+	}
+
+	.site-menu-small a:hover {
+		text-transform: uppercase;
+		font-weight: 900;
+		font-size: 19px;
+		background-color: rgb(205, 63 , 64);
+		color: rgba(245, 245 , 245, 0.95);
+	}
+
+	.menu-btn-small {
+		width: 30px;
+		height: 30px;
+		background-color: #333;
+		position: absolute;
+		right: -35px;
+	 	top: 10px;
+	}
+
+	.menu-btn-small span,
+	.menu-btn-small span::before,
+	.menu-btn-small span::after {
+		position: absolute;
+		top: 50%; margin-top: -1px;
+		left: 50%; margin-left: -10px;
+		width: 20px;
+		height: 2px;
+		background-color: #fff;
+	}
+	.menu-btn-small span::before,
+	.menu-btn-small span::after {
+		content: '';
+		display: block;
+		transition: 0.2s;
+	}
+	.menu-btn-small span::before {
+		transform: translateY(-5px);
+	}
+	.menu-btn-small span::after {
+		transform: translateY(5px);
+	}
+
+	.menu-btn-small-active span:before {
+		transform: rotate(-35deg);
+		width: 10px;
+		transform-origin: left bottom;
+	}
+
+	.menu-btn-small-active span:after {
+		transform: rotate(35deg);
+	 	width: 10px;
+		transform-origin: left top;
+	}
+
+	input.feedback-name, 
+	input.feedback-email {
+		width: 260px;
+	}
+			
 	.feature-images-wrapper {
 		max-width: 930px;
 	}	
